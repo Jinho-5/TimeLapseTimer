@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0374F544BC10B4ABEDE80764 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90294E1624C9E0CBF7AC4410 /* CameraViewModel.swift */; };
+		1303310C4BAD74576775EC5E /* TimeLapseTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38072F747767B2F1A14C9752 /* TimeLapseTimerApp.swift */; };
+		2DD9BBBD22725C103C6AF1F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04D2E5A28A1249E26ED8DB2 /* AVFoundation.framework */; };
+		2FDE641F32029FC42FEABCC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D58DAB0BED5A3D8D65518B /* Assets.xcassets */; };
+		438958C6DA4E51DBC1C945BE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9207D00C23DCEDB84D8039E4 /* Category.swift */; };
+		45E1342471BDED0B26ED35FA /* RecordingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B87FD8F9861B05BFDAF47B /* RecordingSession.swift */; };
+		4B8167C780610B23ED0817E5 /* GallerySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E435FAF64EF77EC4120AA /* GallerySheet.swift */; };
+		74DA219FA9E0E02EFCCD522A /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C8CAB71E0E5A6F80EAA29 /* GalleryItem.swift */; };
+		7E1EBDB1BB9E9C54E6F5C7DE /* TimerLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F15A4A28B0E8683B179312 /* TimerLogEntry.swift */; };
+		824EEE21D3B2BDA9A75C812C /* SubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F4C229D40F485157EDED69 /* SubtitleStyle.swift */; };
+		8E1E512DAF4577F0A727E08E /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C4A3BAF1973A5B4CAC0AB /* CameraPreviewView.swift */; };
+		912129DC08A2789C5264B735 /* CategoryManagementSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CCBEB28FEB0DC88EF04CE /* CategoryManagementSheet.swift */; };
+		A2158E1333D2FCFF0C462EB8 /* VideoCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48D645D0059BB96FE791D4 /* VideoCompositor.swift */; };
+		AA88B7683BB9905E08D3B624 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D1D2331DED80614A89177 /* Photos.framework */; };
+		B08B6AA9CF1EBE12E6B10E33 /* TimerOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B879C3AA643D3B0FCFCCDA /* TimerOverlayView.swift */; };
+		C1A5F6C9FB538CB0600BEAB1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9FD168FD6B8536C48F5DBE /* Media.xcassets */; };
+		C4226666B4892D06E5B57C72 /* MainCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F308EEEF15553E4E52113 /* MainCameraView.swift */; };
+		C929A806D954CF51D5F2BA3B /* RecordingControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E84AB1AAAE86EF106A58C /* RecordingControlsView.swift */; };
+		E573B858121DAA2C91E13412 /* TimerSetupSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4512EF05B1B48F227527357F /* TimerSetupSheet.swift */; };
+		EA68C426AE301DF5C08F6F3A /* GalleryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F0D90D349E45D988FEF3B /* GalleryStore.swift */; };
+		F7865E2E94246326FC048ABC /* EditAndSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153DF49EA5E18E93469E82EA /* EditAndSaveView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A9FD168FD6B8536C48F5DBE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0E9E435FAF64EF77EC4120AA /* GallerySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySheet.swift; sourceTree = "<group>"; };
+		153DF49EA5E18E93469E82EA /* EditAndSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAndSaveView.swift; sourceTree = "<group>"; };
+		1E48D645D0059BB96FE791D4 /* VideoCompositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompositor.swift; sourceTree = "<group>"; };
+		20F15A4A28B0E8683B179312 /* TimerLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerLogEntry.swift; sourceTree = "<group>"; };
+		244C8CAB71E0E5A6F80EAA29 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
+		38072F747767B2F1A14C9752 /* TimeLapseTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLapseTimerApp.swift; sourceTree = "<group>"; };
+		4512EF05B1B48F227527357F /* TimerSetupSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSetupSheet.swift; sourceTree = "<group>"; };
+		54D58DAB0BED5A3D8D65518B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		891E84AB1AAAE86EF106A58C /* RecordingControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingControlsView.swift; sourceTree = "<group>"; };
+		90294E1624C9E0CBF7AC4410 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		9207D00C23DCEDB84D8039E4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9C7F0D90D349E45D988FEF3B /* GalleryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryStore.swift; sourceTree = "<group>"; };
+		A78C4A3BAF1973A5B4CAC0AB /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		B4B879C3AA643D3B0FCFCCDA /* TimerOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerOverlayView.swift; sourceTree = "<group>"; };
+		CF0E5CEB5664E394C02B204B /* TimeLapseTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLapseTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04D2E5A28A1249E26ED8DB2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DF5CCBEB28FEB0DC88EF04CE /* CategoryManagementSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryManagementSheet.swift; sourceTree = "<group>"; };
+		E8B87FD8F9861B05BFDAF47B /* RecordingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSession.swift; sourceTree = "<group>"; };
+		E8F4C229D40F485157EDED69 /* SubtitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleStyle.swift; sourceTree = "<group>"; };
+		F29F308EEEF15553E4E52113 /* MainCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCameraView.swift; sourceTree = "<group>"; };
+		F91D1D2331DED80614A89177 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A826A32D4C693D0F37C8468D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD9BBBD22725C103C6AF1F1 /* AVFoundation.framework in Frameworks */,
+				AA88B7683BB9905E08D3B624 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BD5D4C2D012707113FF3AA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF0E5CEB5664E394C02B204B /* TimeLapseTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85513DB50A6F4415E8BED373 = {
+			isa = PBXGroup;
+			children = (
+				EE9884A19C02E5FD4C2BCADA /* Models */,
+				9B6A054869FFF381CECBD99E /* Services */,
+				F397986C45E6F3A15D2B9052 /* ViewModels */,
+				C2284C63F354058C8693FF92 /* Views */,
+				38072F747767B2F1A14C9752 /* TimeLapseTimerApp.swift */,
+				BE171EAEA1AA9C5AE56725E6 /* Frameworks */,
+				6BD5D4C2D012707113FF3AA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B6A054869FFF381CECBD99E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C7F0D90D349E45D988FEF3B /* GalleryStore.swift */,
+				1E48D645D0059BB96FE791D4 /* VideoCompositor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BE171EAEA1AA9C5AE56725E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D04D2E5A28A1249E26ED8DB2 /* AVFoundation.framework */,
+				F91D1D2331DED80614A89177 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2284C63F354058C8693FF92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54D58DAB0BED5A3D8D65518B /* Assets.xcassets */,
+				A78C4A3BAF1973A5B4CAC0AB /* CameraPreviewView.swift */,
+				DF5CCBEB28FEB0DC88EF04CE /* CategoryManagementSheet.swift */,
+				153DF49EA5E18E93469E82EA /* EditAndSaveView.swift */,
+				0E9E435FAF64EF77EC4120AA /* GallerySheet.swift */,
+				F29F308EEEF15553E4E52113 /* MainCameraView.swift */,
+				0A9FD168FD6B8536C48F5DBE /* Media.xcassets */,
+				891E84AB1AAAE86EF106A58C /* RecordingControlsView.swift */,
+				B4B879C3AA643D3B0FCFCCDA /* TimerOverlayView.swift */,
+				4512EF05B1B48F227527357F /* TimerSetupSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE9884A19C02E5FD4C2BCADA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9207D00C23DCEDB84D8039E4 /* Category.swift */,
+				244C8CAB71E0E5A6F80EAA29 /* GalleryItem.swift */,
+				E8B87FD8F9861B05BFDAF47B /* RecordingSession.swift */,
+				E8F4C229D40F485157EDED69 /* SubtitleStyle.swift */,
+				20F15A4A28B0E8683B179312 /* TimerLogEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F397986C45E6F3A15D2B9052 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				90294E1624C9E0CBF7AC4410 /* CameraViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		719600FD9A1C04A2FCB46AD4 /* TimeLapseTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8ACD238210CA38748B20381 /* Build configuration list for PBXNativeTarget "TimeLapseTimer" */;
+			buildPhases = (
+				D97E074C1C5411F2B120E69E /* Sources */,
+				635B3F524DF3BAED4394F304 /* Resources */,
+				A826A32D4C693D0F37C8468D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeLapseTimer;
+			packageProductDependencies = (
+			);
+			productName = TimeLapseTimer;
+			productReference = CF0E5CEB5664E394C02B204B /* TimeLapseTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7036F25EACC52761F8287F99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					719600FD9A1C04A2FCB46AD4 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6241A5C56E1592DA88A3139E /* Build configuration list for PBXProject "TimeLapseTimer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 85513DB50A6F4415E8BED373;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6BD5D4C2D012707113FF3AA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				719600FD9A1C04A2FCB46AD4 /* TimeLapseTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		635B3F524DF3BAED4394F304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDE641F32029FC42FEABCC4 /* Assets.xcassets in Resources */,
+				C1A5F6C9FB538CB0600BEAB1 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D97E074C1C5411F2B120E69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1E512DAF4577F0A727E08E /* CameraPreviewView.swift in Sources */,
+				0374F544BC10B4ABEDE80764 /* CameraViewModel.swift in Sources */,
+				438958C6DA4E51DBC1C945BE /* Category.swift in Sources */,
+				912129DC08A2789C5264B735 /* CategoryManagementSheet.swift in Sources */,
+				F7865E2E94246326FC048ABC /* EditAndSaveView.swift in Sources */,
+				74DA219FA9E0E02EFCCD522A /* GalleryItem.swift in Sources */,
+				4B8167C780610B23ED0817E5 /* GallerySheet.swift in Sources */,
+				EA68C426AE301DF5C08F6F3A /* GalleryStore.swift in Sources */,
+				C4226666B4892D06E5B57C72 /* MainCameraView.swift in Sources */,
+				C929A806D954CF51D5F2BA3B /* RecordingControlsView.swift in Sources */,
+				45E1342471BDED0B26ED35FA /* RecordingSession.swift in Sources */,
+				824EEE21D3B2BDA9A75C812C /* SubtitleStyle.swift in Sources */,
+				1303310C4BAD74576775EC5E /* TimeLapseTimerApp.swift in Sources */,
+				7E1EBDB1BB9E9C54E6F5C7DE /* TimerLogEntry.swift in Sources */,
+				B08B6AA9CF1EBE12E6B10E33 /* TimerOverlayView.swift in Sources */,
+				E573B858121DAA2C91E13412 /* TimerSetupSheet.swift in Sources */,
+				A2158E1333D2FCFF0C462EB8 /* VideoCompositor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0781F020C1F8AE19526B88AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2F35429CFE1A6C34197AF894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZV28375N8U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "갓생Beta";
+				INFOPLIST_KEY_NSCameraUsageDescription = "타임랩스 녹화에 카메라가 필요합니다";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "영상에 오디오를 포함하기 위해 마이크가 필요합니다";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "완성된 영상을 사진 앱에 저장합니다";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TimeLapseTimer;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A0B26327C3085253CCEFE7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FB1E0E36D6FA53B8C98444FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZV28375N8U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "갓생Beta";
+				INFOPLIST_KEY_NSCameraUsageDescription = "타임랩스 녹화에 카메라가 필요합니다";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "영상에 오디오를 포함하기 위해 마이크가 필요합니다";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "완성된 영상을 사진 앱에 저장합니다";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TimeLapseTimer;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6241A5C56E1592DA88A3139E /* Build configuration list for PBXProject "TimeLapseTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0B26327C3085253CCEFE7E /* Debug */,
+				0781F020C1F8AE19526B88AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8ACD238210CA38748B20381 /* Build configuration list for PBXNativeTarget "TimeLapseTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1E0E36D6FA53B8C98444FF /* Debug */,
+				2F35429CFE1A6C34197AF894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7036F25EACC52761F8287F99 /* Project object */;
+}

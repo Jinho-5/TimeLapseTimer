@@ -1,0 +1,57 @@
+name: TimeLapseTimer
+
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"      # iPhone only
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+
+targets:
+  TimeLapseTimer:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+
+    sources:
+      - path: TimeLapseTimerApp.swift
+      - path: Models
+      - path: ViewModels
+      - path: Views
+      - path: Services
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.TimeLapseTimer
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: B6TZ56GJ6Z
+        SWIFT_EMIT_LOC_STRINGS: "YES"
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/Frameworks"
+
+        # ── Info.plist 자동 생성 (Xcode 모던 방식) ──────────────────────────
+        # INFOPLIST_FILE 대신 GENERATE_INFOPLIST_FILE = YES 를 사용.
+        # Xcode의 "Update to Recommended Settings" 다이얼로그가 이 값을 바꾸더라도
+        # 아래 INFOPLIST_KEY_* 항목들은 빌드 설정에 남아 권한 키가 사라지지 않음.
+        GENERATE_INFOPLIST_FILE: "YES"
+
+        # ── 필수 개인정보 사용 권한 ──────────────────────────────────────────
+        INFOPLIST_KEY_NSCameraUsageDescription: "타임랩스 녹화에 카메라가 필요합니다"
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "영상에 오디오를 포함하기 위해 마이크가 필요합니다"
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: "완성된 영상을 사진 앱에 저장합니다"
+
+        # ── 지원 방향 ────────────────────────────────────────────────────────
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+
+    dependencies:
+      - sdk: AVFoundation.framework
+      - sdk: Photos.framework
