@@ -49,7 +49,7 @@ struct RecordingSession: Identifiable {
     var videoFileName: String?
 
     init(timerMode: TimerMode,
-         targetOutputDuration: TimeInterval = 20,
+         targetOutputDuration: TimeInterval = 10,
          usedFrontCamera: Bool = false) {
         self.id                   = UUID()
         self.startDate            = Date()

@@ -8,7 +8,7 @@ struct TimerSetupSheet: View {
     @State private var pickedHours:   Int = 0
     @State private var pickedMinutes: Int = 5
     @State private var pickedSeconds: Int = 0
-    @State private var selectedOutputDuration: TimeInterval = 20
+    @State private var selectedOutputDuration: TimeInterval = 10
 
     enum SheetMode { case stopwatch, countdown }
 

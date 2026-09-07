@@ -81,7 +81,7 @@ final class CameraViewModel: NSObject, ObservableObject {
         }
     }
 
-    @Published var targetOutputDuration: TimeInterval = 20
+    @Published var targetOutputDuration: TimeInterval = 10
 
     // MARK: - Combine
     private var clockCancellable: AnyCancellable?

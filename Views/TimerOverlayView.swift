@@ -29,9 +29,13 @@ struct TimerOverlayView: View {
             .padding(.top, isLandscape ? 10 : 16)
 
             // ── 중앙: 타이머 ──
+            // 가로 모드에서는 전체 영역 기준으로 정확히 세로 중앙 정렬(아래로 처지지 않도록),
+            // 세로 모드에서는 하단 컨트롤 공간 확보를 위해 살짝 위로 올린다.
             timerSection
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 .offset(y: isLandscape ? 0 : -50)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     // MARK: - 날짜/시각

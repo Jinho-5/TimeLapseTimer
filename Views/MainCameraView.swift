@@ -86,22 +86,26 @@ struct MainCameraView: View {
             .ignoresSafeArea()
 
             if isLandscape {
-                // 가로 모드: 컨트롤은 우측, 좌측 여백에 카테고리 칩
+                // 가로 모드: 컨트롤은 우측, 카테고리는 Safe Area leading 밀착 + 상단 시계 아래 고정
                 ZStack {
                     RecordingControlsView(viewModel: viewModel)
 
-                    if viewModel.recordingState == .idle {
-                        categoryEditButton
-                            .frame(maxWidth: .infinity, maxHeight: .infinity,
-                                   alignment: .topLeading)
-                            .padding(.top, 12)
-                            .padding(.leading, 16)
-                    } else if viewModel.recordingState != .processing {
-                        categoryPickerColumn
-                            .frame(maxWidth: .infinity, maxHeight: .infinity,
-                                   alignment: .leading)
-                            .padding(.leading, 16)
+                    VStack(spacing: 0) {
+                        // 상단 시계 영역(y≈0~34pt) + 여유분 → 카테고리는 시계 아래에서 시작
+                        Spacer().frame(height: 64)
+                        // HStack + trailing Spacer() 로 카테고리를 leading에 고정
+                        HStack(alignment: .top, spacing: 0) {
+                            if viewModel.recordingState == .idle {
+                                categoryEditButton
+                            } else if viewModel.recordingState != .processing {
+                                categoryPickerColumn
+                            }
+                            Spacer(minLength: 0)
+                        }
+                        Spacer(minLength: 0)
                     }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .padding(.leading, -10) // 카테고리를 Safe Area 안쪽으로 더 당겨 좌측 밀착
                 }
             } else {
                 // 세로 모드: 컨트롤 바로 위에 카테고리 행
@@ -155,12 +159,15 @@ struct MainCameraView: View {
     }
 
     /// 가로 모드: 좌측 수직 목록
+    /// - 너비 130pt 제한: 화면 중앙 타이머(가로 중앙 ≈ 300pt+)와 충분한 간격 확보
+    /// - 높이 제한 없음: 칩 전체가 잘림 없이 표시되도록 자연 높이 사용
     private var categoryPickerColumn: some View {
-        VStack(spacing: 8) {
+        VStack(alignment: .leading, spacing: 6) {
             ForEach(categoryStore.categories) { cat in
                 categoryChip(cat)
             }
         }
+        .frame(maxWidth: 130, alignment: .leading)
     }
 
     /// Wide(iPad) 모드: 패널 하단 수직 목록
